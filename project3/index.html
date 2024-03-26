@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .full-landing-image{
+    width: 100%;
+    height: 100vh;
+    /* background: url(pexels-jaroslav-maléř-19956636.jpg) no-repeat center; */
+    background-color:rgb(118, 215, 211);
+    background-size: cover;
+}
+    </style>
+</head>
+
+<body>
+    <div class="full-landing-image">
+   
+    </div>
+
+<!-- ripple effect -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- jQuery Ripples JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+	    $(".full-landing-image").ripples({
+        resolution: 200,
+        perturbance: .004,
+    });
+});
+    </script>
+
+</body>
+</html>
